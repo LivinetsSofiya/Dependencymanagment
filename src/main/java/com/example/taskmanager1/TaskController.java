@@ -16,7 +16,7 @@ public class TaskController {
     @Autowired
     private TaskRepository taskRepository;
 
-    @GetMapping
+  /*  @GetMapping
     public String listTasks(Model model) {
         model.addAttribute("tasks", taskRepository.findAll());
         model.addAttribute("newTask", new Task()); // For the form
@@ -27,5 +27,5 @@ public class TaskController {
     public String addTask(Task task) {
         taskRepository.save(task);
         return "redirect:/";
-    }
+    }*/
 }
